@@ -1,0 +1,12 @@
+<h3>Poner tu nuevo pais</h3>
+
+<input type="text" placeholder="Pais" #name/>
+<input type="text" placeholder="Contiente" #continent/>
+<input type="text" placeholder="Capital" #capital/>
+
+<button (click)="sendPaises({
+    name: name.value,
+    continent: continent.value,
+    capital: capital.value
+})">Click para agregar tu pais</button>
+
